@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './Components/Home'
 import About from './Components/About'
 import NavBar from './Components/NavBar'
+import Result from './Components/Result'
 
 
 //! This is the base for our browser router, creating the pages of our application
@@ -17,8 +18,11 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route> 
-          <Route exact path='/' >
+          <Route exact path='/about' >
             <About />
+          </Route>
+          <Route exact path='/result' >
+            <Result />
           </Route>
         </Switch>
       </BrowserRouter>
