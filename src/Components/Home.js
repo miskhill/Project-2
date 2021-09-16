@@ -1,22 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-//import About from './About'
-//import axios from 'axios'
-
-
 
 const Home = () => {
+
+
   return (
     <>
-      <div>
-        <h1>Movie fun</h1>
-        <p>
-          Check out our movie database!
-        </p>
-        <Link to='/result'>
-          Explore our movies
+      <div className='text-center'>
+        <h1 >Randomly Generate Your Film For The Evening</h1>
+        <Link to='movies/movieshow'>
+          <p className="btn btn-lg btn-yellow display-flex">Generate Your Movie!!</p>
         </Link>
       </div>
+      <Link to='movies/movieposters'>
+        <p>Display posters</p>
+      </Link>
     </>
   )
 }
@@ -25,3 +23,4 @@ const Home = () => {
 
 
 export default Home
+

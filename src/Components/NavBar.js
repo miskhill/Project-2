@@ -11,16 +11,13 @@ const NavBar = () => {
   }, [location.pathname])
 
   return (
-    <div>
-      <div>
-        <div>
+    <div className="navbar navbar-expand-sm bg-light">
+      <div className="container">
+        <div className="navbar-brand">
           <Link to=''>🍿</Link>
         </div>
-        <ul>
-          <li>
-            <Link to='/Result'>See All Movies</Link>
-          </li>
-          <li>
+        <ul className="navbar-nav">
+          <li className="nav-item">
             <Link to='/about'>About our project</Link>
           </li>
         </ul>

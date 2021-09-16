@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './Components/Home'
 import About from './Components/About'
 import NavBar from './Components/NavBar'
-import Result from './Components/Result'
+import MovieShow from './Components/Movies/MovieShow'
+//import MoviePosters from './Components/Movies/MoviePosters'
 
 
 //! This is the base for our browser router, creating the pages of our application
@@ -21,8 +22,9 @@ function App() {
           <Route exact path='/about' >
             <About />
           </Route>
-          <Route exact path='/result' >
-            <Result />
+          
+          <Route exact path='/movies/movieShow'>
+            <MovieShow />
           </Route>
         </Switch>
       </BrowserRouter>
