@@ -12,8 +12,7 @@ const MovieShow = () => {
   const { id } = useParams()
   //API key
   const api = 'api_key=a68aa67bd52b5478f023c1d5878cdd61'
-  //function to generate a random number
-  
+  //function to generate a random number 650
 
   useEffect(() => {
     const random = Math.floor(Math.random() * 650)

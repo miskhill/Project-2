@@ -13,7 +13,7 @@ const Home = () => {
         </Link>
       </div>
       <Link to='movies/movieposters'>
-        <p>Display posters</p>
+        <p>Display popular Movies</p>
       </Link>
     </>
   )
