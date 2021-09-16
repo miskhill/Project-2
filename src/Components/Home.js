@@ -11,10 +11,19 @@ const Home = () => {
         <Link to='movies/movieshow'>
           <p className="btn btn-lg btn-yellow display-flex">Generate Your Movie!!</p>
         </Link>
+        <h1>
+        Would you rather search Popular Movies?
+        </h1>
+        <Link to='movies/movieposters'>
+          <p className="btn btn-lg btn-yellow display-flex">Display popular Movies</p>
+        </Link>
+        <h1>
+        How about Top Rated?
+        </h1>
+        <Link to='movies/movierated'>
+          <p className="btn btn-lg btn-yellow display-flex">Display Top Rated Movies</p>
+        </Link>
       </div>
-      <Link to='movies/movieposters'>
-        <p>Display popular Movies</p>
-      </Link>
     </>
   )
 }

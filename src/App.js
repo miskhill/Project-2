@@ -5,6 +5,7 @@ import About from './Components/About'
 import NavBar from './Components/NavBar'
 import MovieShow from './Components/Movies/MovieShow'
 import MoviePosters from './Components/Movies/MoviePosters'
+import MovieRated from './Components/Movies/MovieRated'
 
 
 //! This is the base for our browser router, creating the pages of our application
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route exact path='/movies/moviePosters'>
             <MoviePosters />
+          </Route>
+          <Route exact path='/movies/movieRated'>
+            <MovieRated />
           </Route>
           <Route exact path='/movies/movieShow'>
             <MovieShow />
