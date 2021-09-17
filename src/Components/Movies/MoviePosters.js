@@ -19,21 +19,23 @@ const MoviePosters = () => {
   
   return (
       
-    <div className="container mt-4">
-      {posters.map((poster) => {
-        
-        return (
-          <article key={posters.id}>
-            <div>
-              <img className="card-image" src={`https://image.tmdb.org/t/p/w500${poster.poster_path}`} alt={poster.title}/>
-              <h3>
-              Name: {posters.title}
-              </h3>
-            </div>
-          </article>
-        )
-      }
-      )}
+    <div className='movies-list container mt-4'>
+      <div className='row'>
+        {posters.map((poster) => {
+          //const { posters } = poster
+          return (
+            <article key={posters.id} className='col-12 col-md-6 col-lg-3 mb-4' >
+              <div className='card text-center h-100'>
+                <img className='card-image' src={`https://image.tmdb.org/t/p/w500${poster.poster_path}`} alt={poster.title}/>
+                <h5 className='card-header'>
+                  {poster.title}
+                </h5>
+              </div>
+            </article>
+          )
+        }
+        )}
+      </div>
     </div>
   )
 }

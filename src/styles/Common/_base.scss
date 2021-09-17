@@ -1,0 +1,45 @@
+.site-wrapper {
+  min-height: 100vh;
+  background-color: $lgrey;
+  background-image: url('../images/background1.jpeg');
+  background-size: cover;
+  font-family: "Carter One", cursive;
+}
+.about {
+  background-color: white;
+  background-image: url('../images/stick-man.gif');
+  background-repeat: no-repeat;
+}
+
+.btn {
+  color: black;
+  text-decoration: none;
+}
+.btn-yellow {
+  background-color: $yellow;
+}
+.btn-purple {
+  background-color: $purple;
+}
+.card-header {
+  height: 100%;
+}
+.navbar {
+  background-color: $grey;
+  .navbar-brand {
+    a {
+      text-decoration: none;
+      color: $yellow;
+    }
+  }
+  .nav-item {
+    margin-left: 10px;
+    a {
+      text-decoration: none;
+      color: $yellow;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

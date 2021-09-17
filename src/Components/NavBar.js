@@ -11,10 +11,10 @@ const NavBar = () => {
   }, [location.pathname])
 
   return (
-    <div className="navbar navbar-expand-sm bg-light">
+    <div className="navbar navbar-expand-sm">
       <div className="container">
         <div className="navbar-brand">
-          <Link to=''>🍿</Link>
+          <Link to=''> Home 🍿</Link>
         </div>
         <ul className="navbar-nav">
           <li className="nav-item">

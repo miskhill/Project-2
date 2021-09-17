@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 
-const MovieShow = () => {
+const MovieShow = ( { error } ) => {
 
   // State
   const [ movies , setMovies ] = useState([])
@@ -37,10 +37,10 @@ const MovieShow = () => {
           <h2>{movies.title}</h2>
           <hr />
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6" >
               <img src={`https://image.tmdb.org/t/p/w500${movies.poster_path}`} alt={movies.title} />
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6" >
               <h4><span>🎟</span> Status</h4>
               <p>{movies.status}</p>
               <hr />
@@ -63,7 +63,7 @@ const MovieShow = () => {
           {hasError ? 
             <h2 className="display-5 text-center">Oh! Something went wrong</h2> 
             : 
-            <h2 className="display-5 text-center">Show info</h2> 
+            <img className="spinner" src={error} alt="Error gif" />
           }
         </>
       

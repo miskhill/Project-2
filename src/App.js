@@ -13,7 +13,7 @@ import MovieRated from './Components/Movies/MovieRated'
 
 function App() {
   return (
-    <div>
+    <div className='site-wrapper d-flex flex-column'>
       <BrowserRouter>
         <NavBar />
         <Switch>
