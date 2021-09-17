@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className='hero text-center flex-grow-1 flex-grow-1 d-flex flex-column justify-content-center align-items-center'>
-        <h1 className='display-4'>Movie Generator</h1>
+        <h1 className='display-4 pb-5'>Movie Generator</h1>
         <h1 className='display-5'>Randomly Generate Your Film For The Evening</h1>
         <Link to='movies/movieshow'>
           <p className="btn btn-lg btn-yellow display-flex">Generate Your Movie!!</p>
