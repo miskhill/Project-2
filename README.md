@@ -73,6 +73,8 @@ Myself and Victor spent time wire-framing and discussing the possible functional
 
 We believe other sites already do this and to get actual real world use out of the app it would need to serve a better purpose. We decided that a randomiser would be ideal. How many times do you want to watch a movie but can't decide which one!!?? You spend most of the movie time scrolling through your streaming provider to eventually settle on some movie you perhaps are underwhelmed by! In our app this time is spent simply clicking a button. The button takes the API key and randomises this to display a movie.
 
+![random code](https://github.com/miskhill/Project-2/blob/master/random%20code.png)
+  
   
 
 ![Single search](https://github.com/miskhill/Project-2/blob/master/Screenshot%202021-09-17%20at%2008.35.20.png)
@@ -89,7 +91,7 @@ We also added search functionality so that you could search current popular movi
 
 And code for Top Rated Movies as well:
 
-  
+![topratedcode](https://github.com/miskhill/Project-2/blob/master/top%20rated.png)
   
 
 **Pair Programming**
@@ -153,5 +155,9 @@ We handled API errors through Try/Catch and had the following gif ready for if t
 - When destructuring data we had to do this in different ways which was something we didn’t expect. I imagined once I had destructured data I would be able to do this the same way throughout the project. This was not the case due to how the API was structured.
 
 - Source Control management and importance. This was the first time I had been sharing code with someone contributing.
+
+
+
+
 
 
